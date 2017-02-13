@@ -34,12 +34,6 @@ $ sudo -u hdfs hadoop fs -mkdir /user/hughpear/input
 $ sudo -u hdfs hadoop fs -chown -R hughpear:hughpear /user/hughpear
 ```
 
-Download some sample data and add it to the HDFS filesystem
-```
-$ wget https://ia902708.us.archive.org/13/items/thebibleoldandne00010gut/kjv10.txt
-$ sudo -u hughpear hadoop fs -put kjv10.txt /user/hughpear/input
-```
-
 Verify the file system is setup correctly
 ```
 $ sudo -u hdfs hadoop fs -ls -R /
